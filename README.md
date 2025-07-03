@@ -6,7 +6,7 @@ A personal administrative assistant for your terminal, written in pure Rust.
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone <https://github.com/Myrmecology/Administrative-Assistant.git>
 cd admin-assist
 
 # Build the project
