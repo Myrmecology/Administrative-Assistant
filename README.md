@@ -1,4 +1,4 @@
-# Administrative Assistant
+# Administrative Assistant 🦀🦀🦀
 
 A powerful command-line personal assistant written in pure Rust. Manage notes, monitor system health, and streamline your daily tasks - all from your terminal.
 
