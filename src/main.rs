@@ -130,11 +130,11 @@ fn handle_note_command(cmd: NoteCommands) -> Result<()> {
                         note.id.to_string()[..8].bright_blue(),
                         note.title.bright_white()
                     );
-                    println!("  {} {}", "Created:".dim(), note.created_at.format("%Y-%m-%d %H:%M"));
+                    println!("  {} {}", "Created:".dimmed(), note.created_at.format("%Y-%m-%d %H:%M"));
                     if !note.tags.is_empty() {
-                        println!("  {} {}", "Tags:".dim(), note.tags.join(", ").cyan());
+                        println!("  {} {}", "Tags:".dimmed(), note.tags.join(", ").cyan());
                     }
-                    println!("  {} {}", "Content:".dim(), 
+                    println!("  {} {}", "Content:".dimmed(), 
                         note.content.lines().next().unwrap_or("").chars().take(50).collect::<String>()
                     );
                     println!("{}", "─".repeat(60));
@@ -166,7 +166,7 @@ fn handle_note_command(cmd: NoteCommands) -> Result<()> {
                         note.title.bright_white()
                     );
                     if !note.tags.is_empty() {
-                        println!("  {} {}", "Tags:".dim(), note.tags.join(", ").cyan());
+                        println!("  {} {}", "Tags:".dimmed(), note.tags.join(", ").cyan());
                     }
                     println!("{}", "─".repeat(60));
                 }
