@@ -1,5 +1,6 @@
 mod notes;
 mod config;
+mod snapshot;
 
 use clap::{Parser, Subcommand};
 use anyhow::Result;
@@ -22,6 +23,8 @@ enum Commands {
     },
     /// Initialize configuration
     Init,
+    /// Show system snapshot
+    Snapshot,
 }
 
 #[derive(Subcommand)]
@@ -68,6 +71,7 @@ fn main() -> Result<()> {
             println!("Configuration directory: {}", config::get_config_dir()?.display());
             Ok(())
         }
+        Commands::Snapshot => snapshot::show_snapshot(),
     }
 }
 
