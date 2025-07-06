@@ -1,5 +1,7 @@
 # Administrative Assistant 🦀🦀🦀
 
+PROJECT DEMO LINK: https://www.youtube.com/watch?v=NqxOqCMHugc&t=48s
+
 A powerful command-line personal assistant written in pure Rust. Manage notes, monitor system health, and streamline your daily tasks - all from your terminal.
 
 ## Features🦀🦀🦀
